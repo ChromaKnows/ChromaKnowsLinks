@@ -37,10 +37,26 @@ body {
     padding-bottom: 40px; /* Space below the image row */
 }
 
-.image-row img {
-    height: auto; /* Maintain aspect ratio */
-    max-height: 40px; /* Maximum height of images */
+/* Styles specific to links in the image row */
+.image-row a {
+    border: none; /* Removes border */
+    background: transparent; /* Ensures no background */
+    padding: 0; /* Resets padding */
+    margin: 0; /* Resets margin */
+    text-decoration: none; /* Removes text decoration */
 }
+
+.image-row a:hover {
+    background-color: transparent; /* No background change on hover */
+    color: inherit; /* Keeps color same on hover */
+}
+
+/* Styles for the images within the links in the image row */
+.image-row a img {
+    display: block; /* Removes bottom margin/whitespace inherent to inline elements */
+    max-height: 40px; /* Maximum height of images, adjust as necessary */
+}
+
 
 .link-container a {
     border: 2px solid #fff; /* White border */
