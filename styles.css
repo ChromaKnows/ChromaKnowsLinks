@@ -78,6 +78,16 @@ body {
     margin-bottom: 20px; /* Spacing below the text */
 }
 
+.bottom-text {
+    opacity: 0.5; /* Sets the opacity to 50% */
+    color: #fff; /* Sets the text color, adjust as needed */
+    font-size: 0.7em; /* Smaller font size */
+    text-align: center; /* Centers the text */
+    margin: 20px 0; /* Adds margin above and below the text */
+    padding: 0 20px; /* Adds padding on the sides for better readability */
+}
+
+
 @media (max-width: 768px) {
     .logo {
         width: 100px; /* Smaller logo on smaller screens */
@@ -89,5 +99,11 @@ body {
     .embed-container {
         margin-bottom: 20px; /* Spacing below the embed container */
         /* Add more styles as needed, depending on what you're embedding */
+		
+	.bottom-text {
+     font-size: 0.4em; /* Slightly smaller on mobile */
+     padding: 0 10px; /* Less padding on the sides */
+		
+		
     }
 }
