@@ -14,7 +14,6 @@ body {
     background: #000; /* Black background */
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(255,255,255,0.1); /* Slight white shadow for contrast */
     text-align: center;
     width: 100%; /* Adjusted to be responsive */
     max-width: 680px; /* Maximum width of the container */
@@ -37,30 +36,9 @@ body {
     padding-bottom: 40px; /* Space below the image row */
 }
 
-/* Specific styles for links in the image row */
-.image-row a {
-    border: none; /* Removes border */
-    background: none; /* Removes background */
-    padding: 0; /* Resets padding */
-    margin: 0; /* Resets margin */
-    text-decoration: none; /* Removes text decoration */
-    outline: none; /* Removes outline */
-}
-
-/* Specific styles for images within links in the image row */
-.image-row a img {
-    border: none; /* Removes border */
-    outline: none; /* Removes outline */
-    box-shadow: none; /* Removes box shadow */
-    display: block; /* Ensures block-level display */
-    width: auto; /* Maintain aspect ratio */
+.image-row img {
+    height: auto; /* Maintain aspect ratio */
     max-height: 40px; /* Maximum height of images */
-    margin: 0; /* Resets margin */
-    padding: 0; /* Resets padding */
-}
-
-.image-row a:hover {
-    background-color: transparent; /* No change on hover for background */
 }
 
 .link-container a {
@@ -79,6 +57,18 @@ body {
 .link-container a:hover {
     background-color: #fff; /* White background */
     color: #000; /* Black text */
+}
+
+.link-container a.social-icon {
+    border: none; /* Removes the border specifically for social icons */
+    padding: 0;
+    margin: 0;
+    background-color: transparent; /* Ensures no background color */
+}
+
+.link-container a.social-icon:hover {
+    background-color: transparent; /* Ensures no background change on hover */
+    color: inherit; /* Keeps the color the same on hover */
 }
 
 .out-now {
