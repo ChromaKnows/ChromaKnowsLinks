@@ -37,26 +37,31 @@ body {
     padding-bottom: 40px; /* Space below the image row */
 }
 
-/* Styles specific to links in the image row */
+/* Specific styles for links in the image row */
 .image-row a {
     border: none; /* Removes border */
-    background: transparent; /* Ensures no background */
+    background: none; /* Removes background */
     padding: 0; /* Resets padding */
     margin: 0; /* Resets margin */
     text-decoration: none; /* Removes text decoration */
+    outline: none; /* Removes outline */
+}
+
+/* Specific styles for images within links in the image row */
+.image-row a img {
+    border: none; /* Removes border */
+    outline: none; /* Removes outline */
+    box-shadow: none; /* Removes box shadow */
+    display: block; /* Ensures block-level display */
+    width: auto; /* Maintain aspect ratio */
+    max-height: 40px; /* Maximum height of images */
+    margin: 0; /* Resets margin */
+    padding: 0; /* Resets padding */
 }
 
 .image-row a:hover {
-    background-color: transparent; /* No background change on hover */
-    color: inherit; /* Keeps color same on hover */
+    background-color: transparent; /* No change on hover for background */
 }
-
-/* Styles for the images within the links in the image row */
-.image-row a img {
-    display: block; /* Removes bottom margin/whitespace inherent to inline elements */
-    max-height: 40px; /* Maximum height of images, adjust as necessary */
-}
-
 
 .link-container a {
     border: 2px solid #fff; /* White border */
@@ -91,7 +96,8 @@ body {
         max-height: 30px; /* Smaller images on smaller screens */
     }
 	
-.embed-container {
-  margin-bottom: 20px; /* Spacing below the embed container */
-  /* Add more styles as needed, depending on what you're embedding */
+    .embed-container {
+        margin-bottom: 20px; /* Spacing below the embed container */
+        /* Add more styles as needed, depending on what you're embedding */
+    }
 }
