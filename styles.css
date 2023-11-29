@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-    width: 150px; /* Adjusted size */
+    width: 450px; /* Adjusted size */
     height: auto; /* Keep aspect ratio */
     margin: 0 auto 30px; /* Auto margins for left and right to center, 30px margin below */
     display: block; /* Ensures the margin is applied */
