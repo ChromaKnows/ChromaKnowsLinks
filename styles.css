@@ -90,7 +90,7 @@ body {
 
 @media (max-width: 768px) {
     .logo {
-        width: 100px; /* Smaller logo on smaller screens */
+        width: 200px; /* Smaller logo on smaller screens */
     }
     .image-row img {
         max-height: 30px; /* Smaller images on smaller screens */
