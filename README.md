@@ -1,2 +1,1 @@
-# ChromaKnowsLinks
-Linktree for CHROMA KNOWS
+# SocialKid
